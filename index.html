@@ -3,38 +3,64 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ぴろちゃん プライバシーポリシー | Ghost+</title>
+<title>プライバシーポリシー | ぴろちゃん | Ghost+</title>
 <style>
-  body { font-family: -apple-system, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-         max-width: 720px; margin: 0 auto; padding: 24px 20px 64px; color: #333; line-height: 1.9; }
-  h1 { font-size: 1.5rem; border-bottom: 2px solid #f2a; padding-bottom: 8px; }
-  h2 { font-size: 1.15rem; margin-top: 2em; }
-  footer { margin-top: 3em; font-size: 0.85rem; color: #888; }
+  :root { --ink:#3a2e26; --sub:#7a6a5c; --accent:#e0409a; --paper:#fffdf9; --line:#eadfd2; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink);
+         font-family:-apple-system,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+         line-height:1.9; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:720px; margin:0 auto; padding:20px 20px 64px; }
+  nav { display:flex; flex-wrap:wrap; gap:6px 18px; font-size:0.9rem; padding-bottom:10px; border-bottom:1px solid var(--line); }
+  nav a { color:var(--sub); text-decoration:none; padding:2px 0; }
+  nav a[aria-current="page"] { color:var(--ink); font-weight:700; border-bottom:2px solid var(--accent); }
+  nav a:focus-visible, main a:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+  h1 { font-size:1.5rem; margin:1.4em 0 0.6em; padding-bottom:8px; border-bottom:2px solid var(--accent); }
+  h2 { font-size:1.1rem; margin:2em 0 0.4em; }
+  p, li { margin:0.4em 0; }
+  ol, ul { padding-left:1.5em; }
+  a { color:#b0206e; }
+  dl { margin:0.4em 0; }
+  dt { font-weight:700; margin-top:1em; }
+  dd { margin:0.2em 0 0 1em; }
+  footer { margin-top:3em; padding-top:12px; border-top:1px solid var(--line); font-size:0.85rem; color:var(--sub); }
 </style>
 </head>
 <body>
+<div class="wrap">
+<nav aria-label="ぴろちゃんのページ">
+  <a href="./" aria-current="page">プライバシーポリシー</a>
+  <a href="terms.html">利用規約</a>
+  <a href="credits.html">クレジット</a>
+</nav>
+<main>
 <h1>ぴろちゃん プライバシーポリシー</h1>
-<p>Ghost+(以下「当方」)は、iOSアプリ「ぴろちゃん」(以下「本アプリ」)におけるユーザーの個人情報の取り扱いについて、以下のとおりプライバシーポリシーを定めます。</p>
+<p>Ghost+(以下「当方」)は、iOSアプリ「ぴろちゃん」(以下「本アプリ」)における情報の取り扱いについて、以下のとおり定めます。</p>
 
 <h2>1. 収集する情報</h2>
-<p>本アプリは、氏名・メールアドレス・位置情報などの個人情報を収集しません。ゲームの進行状況やスコアなどのプレイデータは、お使いの端末内にのみ保存され、当方のサーバーへ送信されることはありません。</p>
+<p>本アプリは、氏名・メールアドレス・位置情報・端末の識別子などの個人情報を収集しません。</p>
+<p>ゲームの進み具合・スコア・設定(難易度など)は、お使いの端末の中にだけ保存されます。これらが当方や第三者のサーバーへ送信されることはありません。</p>
 
-<h2>2. TestFlight ベータテストにおける情報</h2>
-<p>本アプリのベータ版は Apple の TestFlight を通じて配信されます。TestFlight の利用にあたり、Apple からクラッシュログや利用統計、テスターが任意で送信するフィードバック(スクリーンショット・コメント等)が当方に提供される場合があります。これらの情報は本アプリの品質改善のみに使用し、第三者に提供することはありません。TestFlight における Apple のデータ取り扱いについては、<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple のプライバシーポリシー</a>をご確認ください。</p>
+<h2>2. 通信と外部サービス</h2>
+<p>本アプリはインターネット通信を行いません。広告・アクセス解析・トラッキングのための外部サービスや SDK も組み込んでいません。マイク・カメラ・位置情報・連絡先などへのアクセスも求めません。</p>
 
-<h2>3. 第三者への提供</h2>
-<p>当方は、法令に基づく場合を除き、収集した情報を第三者に提供することはありません。</p>
+<h2>3. 保存データの削除</h2>
+<p>本アプリを端末から削除すると、端末内に保存されたプレイデータもすべて削除されます。</p>
 
-<h2>4. お問い合わせ</h2>
-<p>本ポリシーに関するお問い合わせは、以下の窓口までお願いいたします。</p>
-<p>Ghost+<br>メール: ghostplus.official@gmail.com</p>
+<h2>4. TestFlight によるベータ版について</h2>
+<p>ベータ版を Apple の TestFlight で配信している期間は、Apple からクラッシュログや利用状況、テスターが任意で送るフィードバック(スクリーンショット・コメント等)が当方に提供される場合があります。これらは本アプリの品質改善にのみ使用し、第三者に提供しません。TestFlight での Apple のデータの取り扱いは、<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple のプライバシーポリシー</a>をご確認ください。</p>
 
-<h2>5. 改定</h2>
-<p>本ポリシーの内容は、必要に応じて予告なく変更されることがあります。変更後のプライバシーポリシーは、本ページに掲載した時点から効力を生じるものとします。</p>
+<h2>5. 第三者への提供</h2>
+<p>当方は、法令に基づく場合を除き、前項の情報を第三者に提供しません。</p>
 
-<footer>
-制定日: 2026年8月10日<br>
-&copy; 2026 Ghost+
-</footer>
+<h2>6. お問い合わせ</h2>
+<p>本ポリシーに関するお問い合わせは、以下の窓口までお願いします。</p>
+<p>Ghost+<br>メール: <a href="mailto:ghostplus.official@gmail.com">ghostplus.official@gmail.com</a></p>
+
+<h2>7. 改定</h2>
+<p>本ポリシーは必要に応じて改定することがあります。改定後の内容は、本ページに掲載した時点から効力を生じます。</p>
+</main>
+<footer>制定日: 2026年8月10日 / 改定日: 2026年9月23日<br>&copy; 2026 Ghost+</footer>
+</div>
 </body>
 </html>
